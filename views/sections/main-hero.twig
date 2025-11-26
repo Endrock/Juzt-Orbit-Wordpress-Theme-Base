@@ -2,7 +2,7 @@
 {% set gradient_color_1 = section.settings.gradient_color_1 %}
 {% set gradient_color_2 = section.settings.gradient_color_2 %}
 
-<div class="{{ max_width }}" style="--gradient-color-1: {{ gradient_color_1 }}; --gradient-color-2: {{ gradient_color_2 }};">
+<div class="{{ max_width }} main-hero" style="--gradient-color-1: {{ gradient_color_1 }}; --gradient-color-2: {{ gradient_color_2 }};">
 {% for slide in section.blocks %}
     <div class="main-hero__slide">
         <div class="main-hero__content">

@@ -1,0 +1,17 @@
+{
+  "name": "juzt-orbit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "Jesus Uzcategui",
+  "license": "MIT",
+  "packageManager": "pnpm@10.15.1",
+  "dependencies": {
+    "vite": "^7.2.4"
+  }
+}

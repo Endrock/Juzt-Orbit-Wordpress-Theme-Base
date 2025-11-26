@@ -23,13 +23,6 @@
 
 		{{function('wp_head')}}
 
-
-		{# Optimization: Preload the styles files #}
-		<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="{{ site.theme.link }}/style.css"/>
-		<link
-		rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="{{ site.theme.link }}/dist/juzt.styles.css"/>
-		{# END - Optimization: Preload the styles files #}
-
 		<script>
 			window.growthbook_config = window.growthbook_config || {};
 			window.growthbook_config.trackingCallback = (experiment, result) => { // This is where you would send an event to your analytics provider

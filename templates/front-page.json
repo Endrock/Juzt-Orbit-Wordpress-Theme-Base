@@ -64,9 +64,29 @@
                 "subtitle": "This section comes from an extension!"
             },
             "blocks": []
+        },
+        "section_1763919757056": {
+            "section_id": "main-hero",
+            "settings": {
+                "gradient_color_1": "#FF6B6B",
+                "gradient_color_2": "#FFD93D",
+                "max_width": "container-fluid"
+            },
+            "blocks": [
+                {
+                    "type": "slide",
+                    "settings": {
+                        "title": "Welcome to Juzt Orbit!",
+                        "subtitle": "Your journey starts here",
+                        "button_text": "Get Started",
+                        "button_link": "#"
+                    }
+                }
+            ]
         }
     },
     "order": [
+        "section_1763919757056",
         "section_1763917520977",
         "section_1763724281878"
     ],

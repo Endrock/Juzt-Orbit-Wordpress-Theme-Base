@@ -9,7 +9,7 @@ use JuztStack\JuztOrbit\Assets;
 use JuztStack\JuztOrbit\Extensions;
 use Timber\Site;
 
-if(class_exists('Timber\\Site') === false){
+if (class_exists('Timber\\Site') === false) {
   return;
 }
 
@@ -21,7 +21,22 @@ class StartSite extends Site
     add_action('after_setup_theme', array($this, 'themeSupports'));
     new Extensions();
     new JuztStack();
-    new Assets();
+    new Assets([
+      "dev" => [
+        "js" => [
+          "juzt-orbit-script" => "/frontend/js/index.js"
+        ]
+      ],
+      "prod" => [
+        "js" => [
+          "juzt-orbit-script-module" => "/assets/js/script.js"
+        ],
+        "css" => [
+          "juzt-orbit-style" => "/style.css",
+          "juzt-orbit-style-module" => "/assets/css/style.css"
+        ]
+      ]
+    ]);
     new SvgSupport();
     new Widgets();
     return parent::__construct();
@@ -65,7 +80,5 @@ class StartSite extends Site
       'views_sections_directory' => 'views/sections',  // Para Twig
       'schemas_directory' => 'schemas'                 // Para Builder
     ]);
-
-    
   }
 }

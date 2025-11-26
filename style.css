@@ -249,3 +249,27 @@ body {
     }
   }
 }
+
+.main-hero {
+  background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2));
+  .main-hero__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+  }
+  .main-hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px 0px;
+  }
+  .main-hero__title {
+    font-family: var(--head-fonts);
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .main-hero__subtitle {
+    font-size: 1.5rem;
+  }
+}
